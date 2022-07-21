@@ -91,6 +91,7 @@ public class UserScreen implements UserInterface{
                         System.exit(0);
                         break;
                     default:
+                        //Lançando uma exceção de opção inválida
                         throw new OptionException("Opcao invalida");
                 }
             } catch (Exception e) {
@@ -116,6 +117,7 @@ public class UserScreen implements UserInterface{
                     removeProductFromCart();
                     break;
                 default:
+                    //Lançando exceção de opção inválida
                     throw new OptionException("Opcao invalida");
             }
         } catch (Exception e) {
